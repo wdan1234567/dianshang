@@ -1,0 +1,101 @@
+.head {
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx 10rpx 0;
+  width: 100%;
+  border-bottom: 3rpx solid #d4237a;
+  justify-content: space-between;
+  top: 0;
+  position: fixed;
+  height: 80rpx;
+  background: #fff;
+  align-items: center;
+}
+
+.headItem {
+  width: 33%;
+  text-align: center;
+  height: 60rpx;
+  position: relative;
+}
+
+/* //小箭头 */
+
+.headItem image {
+  width: 30rpx;
+  height: 25rpx;
+}
+
+.headItem view {
+  position: fixed;
+  top: 25rpx;
+  left: 180rpx;
+  display: flex;
+  flex-direction: column;
+}
+#zhekou_img{
+ position: fixed;
+  top: 25rpx;
+  left: 430rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 字体颜色 */
+
+.price_color {
+  color: #d4237a;
+}
+
+#zhekou {
+  border-left: 3rpx solid #d4237a;
+  border-right: 3rpx solid #d4237a;
+}
+
+/* //商品部分 */
+
+.wareArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10rpx;
+  margin-top: 150rpx;
+}
+
+.wareArea>view {
+  width: 48%;
+  border: 1px solid #e5e5e5;
+  margin-top: 20rpx;
+}
+
+.margin {
+  margin-right: 20rpx;
+}
+
+.wareArea>view>image {
+  width: 100%;
+}
+
+.price {
+  color: #e80080;
+  font-size: 35rpx;
+  padding: 0 20rpx;
+}
+/* 原价 */
+.yuan_price {
+  color: #888;
+  font-size: 30rpx;
+  padding: 20rpx;
+  text-decoration: line-through;
+}
+
+.describe {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 35rpx;
+  padding: 10rpx 20rpx;
+}
+

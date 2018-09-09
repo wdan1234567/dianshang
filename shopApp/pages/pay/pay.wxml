@@ -1,0 +1,32 @@
+<view>
+  <view class='head'>
+    <view>
+      <text>收货人:张三</text>
+      <text class='phone'>13512341234</text>
+    </view>
+    <view>
+      四川成都金牛区……
+    </view>
+    <view>
+      收货时间不限</view>
+  </view>
+  <!-- 商品信息 -->
+  <view class='content1' >
+  <view  class='{{index!==wareList.length-1?"border":"wareMsg"}}' wx:for='{{wareList}}' wx:key='{{index}}'>
+     <image src='{{ip+item.content.imgs}}'  class='img'  ></image> 
+    <view class='content'>
+      <view class='name'>{{item.content.name}}</view>
+      <view class='desc'>{{item.content.describe}}</view>
+      <view>数量:<text class='num'>{{item.content.num}}</text></view>
+    </view>
+    <view>
+      <view style="height: 117rpx;">￥{{item.content.price}}</view>
+    </view>
+  </view>
+</view>
+ </view>
+<!-- 支付 -->
+<view class='footer'>
+<view style="padding: 20rpx;">需付金额{{num}}</view>
+ <button style="color: white;  background-color: #f10180;">点击结算</button>
+</view>

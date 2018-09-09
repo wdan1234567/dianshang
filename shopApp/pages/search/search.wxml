@@ -1,0 +1,14 @@
+
+<van-search
+
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:change="changeinput" focus='true'
+>
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
+
+<van-cell-group wx:if='{{wareList.length>0}}' wx:for='{{wareList}}' wx:key='{{index}}'>
+  <van-cell title="{{item.name}}"  data-item='{{item}}' bindtap='jumpWareMsg' />
+</van-cell-group>

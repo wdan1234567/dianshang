@@ -1,0 +1,86 @@
+.center {
+  display: flex;
+  flex-direction: row;
+}
+
+.right {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.left {
+  padding: 50rpx 10rpx;
+  background-color: #f3f4f5;
+  text-align: center;
+  border-left: 5rpx solid transparent;
+}
+
+/* //标签被选中时的颜色 */
+
+.checked {
+  padding: 50rpx 10rpx;
+  background-color: #fff;
+  text-align: center;
+  border-left: 5rpx solid #d4237a;
+}
+
+.scroll {
+  width: 200rpx;
+  height: 1120rpx;
+}
+
+/* //隐藏滚动条 */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/* 右边的信息 */
+
+.chaoshi_ad {
+  width: 92%;
+  height: 200rpx;
+  padding: 20rpx;
+}
+
+.wareList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rpx;
+}
+
+.wareList image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.item {
+  width: 150rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25rpx;
+}
+
+.item text {
+  width: 100%;
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.allware {
+  padding-left: 20rpx;
+}
+
+.right_scroll {
+  height: 1120rpx;
+  width: 100%;
+}

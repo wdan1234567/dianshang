@@ -1,0 +1,95 @@
+<!-- 如果用户没有登录 -->
+<view wx:if='{{islogin==false}}'>
+  <button style="color: white; background-color: #f10180;  width: 200rpx;margin-top: 50%;" bindtap='login'>点击登录</button>
+</view>
+
+<!-- 如果用户已经登录 -->
+<view wx:elif='{{islogin==true}}'>
+  <view class='userMSG'>
+    <image src='{{ip+head}}' id='headIMG'></image>
+    <text>{{uname}}</text>
+     <text bindtap='login'  style="display:inline-block;margin-left:300rpx">切换账号</text>
+  </view>
+  <!-- 用户收藏 -->
+  <view class='collect'>
+    <view>
+      <image src='../footerImg/c1.png' mode="widthFix"></image>
+      <view>商品收藏</view>
+    </view>
+    <view>
+      <image src='../footerImg/c2.png' mode="widthFix"></image>
+      <view>店铺收藏</view>
+    </view>
+    <view>
+      <image src='../footerImg/c3.png' mode="widthFix"></image>
+      <view>品牌收藏</view>
+    </view>
+  </view>
+  <van-notice-bar backgroundColor='#fff' color='#000000' left-icon="" scrollable="true" text="如需联系客服，请访问唯品公众号，如需联系客服，请访问唯品公众号" />
+  <!-- 待付款待收货全部订单 -->
+  <view class='waiting'>
+    <view>
+      <image src='../footerImg/daifk.png' mode="widthFix"></image>
+      <view>待付款</view>
+    </view>
+    <view>
+      <image src='../footerImg/daish.png' mode="widthFix"></image>
+      <view>待收货</view>
+    </view>
+    <view>
+      <image src='../footerImg/dingdan.png' mode="widthFix"></image>
+      <view>全部订单</view>
+    </view>
+  </view>
+  <!-- 收货地址 -->
+  <view class='waiting'>
+    <view>
+      <image src='../footerImg/address.png' mode="widthFix"></image>
+      <view>收货地址</view>
+    </view>
+    <view>
+      <image src='../footerImg/club.png' mode="widthFix"></image>
+      <view>会员俱乐部</view>
+    </view>
+    <view>
+      <image src='../footerImg/quan2.png' mode="widthFix"></image>
+      <view>领券中心</view>
+    </view>
+    <view>
+      <image src='../footerImg/kefu.png' mode="widthFix"></image>
+      <view>唯品客服</view>
+    </view>
+  </view>
+  <view class='waiting shouhuo'>
+    <view>
+      <image src='../footerImg/quan2.png' mode="widthFix"></image>
+      <view>优惠券</view>
+    </view>
+    <view>
+      <image src='../footerImg/bi.png' mode="widthFix"></image>
+      <view>唯品币</view>
+    </view>
+    <view>
+      <image src='../footerImg/pingtuan.png' mode="widthFix"></image>
+      <view>我的拼团</view>
+    </view>
+   
+  </view>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

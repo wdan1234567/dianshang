@@ -1,0 +1,116 @@
+<view>
+  <van-search bindtap='searchInput' value="{{ value }}" placeholder="请输入搜索关键词"   />
+ 
+  <!-- 标签页 -->
+  <scroll-view scroll-x style="width: 100% " class="scroll-view_H">
+    <view class='tab'>
+      <view wx:for='{{head}}' wx:key='{{index}}'>
+        <text bindtap='checkItem' class="{{item == shopitem?'checked':''}}" data-classify="{{item}}">{{item}}</text>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 轮播图 -->
+  <view wx:if="{{shopitem =='鞋包'}}">
+    <swiper class='banner' indicator-dots='true' indicator-color='#d4237a' indicator-active-color='white' autoplay='true' interval='5000' duration='500'>
+      <block wx:for="{{imgUrl}}" wx:key='{{index}}'>
+        <swiper-item class="item_image">
+          <image src='../footerImg/{{item}}' class='swiper_image' mode="aspectFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 小宫格   -->
+    <view class='classify'>
+      <view wx:for="{{imgArr1}}" wx:key='{{index}}'>
+        <image src='../footerImg/{{item.img}}' data-name='{{item.name}}' bindtap='chooseType'></image>
+      </view>
+    </view>
+    <view class='classify'>
+      <view wx:for="{{imgArr2}}" class='classify' wx:key='{{index}}'>
+        <image src='../footerImg/{{item.img}}' data-name='{{item.name}}'  bindtap='chooseType'></image>
+      </view>
+    </view>
+    <image src='../footerImg/dong.gif' class='dong' wx:key='{{index}}' ></image>
+    <image src='../footerImg/zhuanxiang.jpg' class='dong'></image>
+  </view>
+<!-- 超市 -->
+<view wx:elif='{{shopitem =="超市"}}'>
+  <text>超市</text>
+</view>
+<!-- 女装 -->
+<view wx:elif='{{shopitem =="女装"}}'>
+  <text>女装</text>
+</view>
+<!-- 母婴 -->
+<view wx:elif='{{shopitem =="母婴"}}'>
+  <text>母婴</text>
+</view>
+<!-- 今日惊喜 -->
+<view wx:elif='{{shopitem =="今日惊喜"}}'>
+  <text>今日惊喜</text>
+</view>
+<!-- 美妆 -->
+<view wx:elif='{{shopitem =="美妆"}}'>
+  <text>美妆</text>
+</view>
+</view>
+
+ <!-- 新增  -->
+<view id='aa123'>77777777777777777777</view>
+
+ <view>
+  <van-search bindtap='searchInput' value="{{ value }}" placeholder="请输入搜索关键词"   />
+ 
+  <!-- 标签页 -->
+  <scroll-view scroll-x style="width: 100% " class="scroll-view_H">
+    <view class='tab'>
+      <view wx:for='{{head}}' wx:key='{{index}}'>
+        <text bindtap='checkItem' class="{{item == shopitem?'checked':''}}" data-classify="{{item}}">{{item}}</text>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 轮播图 -->
+  <view wx:if="{{shopitem =='鞋包'}}">
+    <swiper class='banner' indicator-dots='true' indicator-color='#d4237a' indicator-active-color='white' autoplay='true' interval='5000' duration='500'>
+      <block wx:for="{{imgUrl}}" wx:key='{{index}}'>
+        <swiper-item class="item_image">
+          <image src='../footerImg/{{item}}' class='swiper_image' mode="aspectFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 小宫格   -->
+    <view class='classify'>
+      <view wx:for="{{imgArr1}}" wx:key='{{index}}'>
+        <image src='../footerImg/{{item.img}}' data-name='{{item.name}}' bindtap='chooseType'></image>
+      </view>
+    </view>
+    <view class='classify'>
+      <view wx:for="{{imgArr2}}" class='classify' wx:key='{{index}}'>
+        <image src='../footerImg/{{item.img}}' data-name='{{item.name}}'  bindtap='chooseType'></image>
+      </view>
+    </view>
+    <image src='../footerImg/dong.gif' class='dong' wx:key='{{index}}'></image>
+    <image src='../footerImg/zhuanxiang.jpg' class='dong'></image>
+  </view>
+<!-- 超市 -->
+<view wx:elif='{{shopitem =="超市"}}'>
+  <text>超市</text>
+</view>
+<!-- 女装 -->
+<view wx:elif='{{shopitem =="女装"}}'>
+  <text>女装</text>
+</view>
+<!-- 母婴 -->
+<view wx:elif='{{shopitem =="母婴"}}'>
+  <text>母婴</text>
+</view>
+<!-- 今日惊喜 -->
+<view wx:elif='{{shopitem =="今日惊喜"}}'>
+  <text>今日惊喜</text>
+</view>
+<!-- 美妆 -->
+<view wx:elif='{{shopitem =="美妆"}}'>
+  <text>美妆</text>
+</view>
+</view>
+
+

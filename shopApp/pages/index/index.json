@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-button":"../../dist/button/index",
+    "van-tabbar": "../../dist/tabbar/index",
+    "van-tabbar-item": "../../dist/tabbar-item/index",
+    "van-search": "../../dist/search/index"
+  }
+}

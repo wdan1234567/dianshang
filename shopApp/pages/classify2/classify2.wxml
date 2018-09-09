@@ -1,0 +1,31 @@
+<!-- 标题 -->
+
+<view class='head'>
+  <view class='headItem'>
+    <text class='{{price_color}}'bindtap='getwareList' id='price'>价格</text>
+    <view>
+      <image src='../footerImg/{{top1}}' bindtap='price_top'></image>
+      <image src='../footerImg/{{bottom2}}' bindtap='price_bottom'></image>
+    </view>
+  </view>
+  <view class='headItem' id='zhekou'>
+    <text class='{{zhekou_color}}' bindtap='getwareList'id='zhekou2'>折扣</text>
+    <view id='zhekou_img' >
+      <image src='../footerImg/{{zhekou_top1}}' bindtap='zhekou_top'></image>
+      <image src='../footerImg/{{zhekou_bottom2}}' bindtap='zhekou_bottom'></image>
+    </view>
+  </view>
+  <view class='headItem'>筛选</view>
+</view>
+<!-- 商品图片 -->
+<!-- <view > -->
+<view class='wareArea'>
+  <view wx:for='{{wareList}}' class='{{index%2==0?"margin":""}}' wx:key='index'>
+    <image src='{{ip+item.images[0]}}' bindtap='inf' class='img' id='{{item._id}}'></image>
+    <text class='price'>￥{{item.activity_price}}</text>
+    <text class='yuan_price'>￥{{item.price}}</text>
+    <view class='describe'>{{item.describe}}</view>
+  </view>
+</view>
+
+<!-- </view> -->

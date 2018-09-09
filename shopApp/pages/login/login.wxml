@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<!-- button按钮获取用户信息授权 -->
+<!-- <button class='btn_sub' bindgetuserinfo='btn_sub' open-type="getUserInfo">点击获取头像昵称</button> -->
+
+<view class='container'>
+  <view class='header'>
+    <text>购物商城</text>
+  </view>
+  <form >
+    <view class='section'>
+      <input type='number' placeholder='请输入账号' name="no" bindinput="getPhone" value=''/>
+    </view>
+    <view class='section'>
+      <input password='true' placeholder='请输入密码' name="pwd"   bindinput="getPwd" value=''/>
+    </view>
+    <view class='button'>
+      <button type='default'  style="color: white; background-color: #f10180;"   bindtap='loginBtn'>登录</button>
+    </view>
+  </form>
+  
+</view>
+
+

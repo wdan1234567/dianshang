@@ -1,0 +1,20 @@
+<van-search value="{{ value }}" placeholder="搜索品牌或商品" bindtap='searchInput' />
+<view class='center'>
+  <scroll-view class='scroll' scroll-y='true'>
+    <view wx:for='{{head}}' class='{{shopitem===item?"checked":"left"}}' bindtap='checkItem' wx:key='{{index}}' id='{{item}}'>
+      {{item}}
+    </view>
+  </scroll-view>
+  <scroll-view class='right_scroll' scroll-y='true'>
+    <view class='right'>
+      <image src='../footerImg/chaoshi_ad.png' class='chaoshi_ad'></image>
+      <view class='allware'>所有商品</view>
+      <view class='wareList'>
+        <view wx:for='{{wareList}}' wx:key='{{index}}' class='item'>
+          <image src='{{ip+item.images[0]}}' data-item='{{item}}' bindtap='findType'></image>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

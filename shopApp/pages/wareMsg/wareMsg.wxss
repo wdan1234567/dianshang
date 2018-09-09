@@ -1,0 +1,319 @@
+/* 锚点样式 */
+page{
+  height: 100%;
+}
+.scroll-view{
+  position: relative;
+  height: 100%;
+}
+.banner {
+  width: 100%;
+  margin-bottom: 30rpx;
+  height: 300rpx;
+  margin-top: 50rpx;
+}
+
+.banner image {
+  width: 100%;
+}
+
+/* 活动价 */
+
+.price {
+  font-size: 40rpx;
+  padding: 0 20rpx;
+}
+
+/* 原价 */
+
+.yuan_price {
+  color: #888;
+  font-size: 30rpx;
+  text-decoration: line-through;
+}
+
+.describe {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 35rpx;
+  padding: 10rpx 20rpx;
+  width: 100%;
+}
+
+/* 收藏的样式 */
+
+.collect {
+  position: absolute;
+  right: 100rpx;
+  top: 730rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/* //标题被选中的颜色 */
+
+.checked {
+  color: #d4237a;
+}
+
+.head_nav {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30rpx;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+  top:0;
+  padding: 20rpx 10rpx;
+}
+
+.head_nav text {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.inf {
+  background-color: #d3d3d3;
+  padding: 0 20rpx;
+  text-align: center;
+}
+
+.border {
+  padding: 5rpx 10rpx;
+  border: 3rpx solid #b0c4de;
+  color: #b0c4de;
+  font-size: 25rpx;
+  width: 100rpx;
+}
+
+.first {
+  border-bottom: 3rpx solid #c0c0c0;
+}
+
+.text {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  text-align: left;
+}
+
+.inf>view {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+/* 配送 */
+
+.peisong {
+  padding: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.centent_youhui {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20rpx 10rpx;
+  border-bottom: 3rpx solid #c0c0c0;
+  border-top: 3rpx solid #c0c0c0;
+}
+
+.img1 {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+
+.centent_youhui>view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+/* 品牌收藏的样式 */
+
+.collect_area {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collect_img {
+  width: 100rpx;
+  height: 150rpx;
+  margin-right: 20rpx;
+}
+
+.border2 {
+  padding: 5rpx 10rpx;
+  border: 3rpx solid #d4237a;
+  color: #d4237a;
+  width: 200rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+.pinpai_text {
+  color: #98989f;
+}
+
+.collect_area>view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* 进入店铺 */
+
+.enter_shop {
+  width: 100%;
+  text-align: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-top: 2rpx solid #ccc;
+  color: #555;
+}
+
+.tuijian {
+  width: 100%;
+  text-align: left;
+  padding: 10rpx 20rpx;
+  border-top: 2rpx solid #ccc;
+}
+
+.tuijian_ware {
+  width: 100%;
+  height: 500rpx;
+  border: 1px solid;
+}
+
+/* 商品信息 */
+
+.waremsg {
+  padding: 20rpx;
+}
+
+.waremsgTitle {
+  padding: 20rpx;
+  color: #d4237a;
+}
+
+.title {
+  width: 24%;
+}
+
+.xiangqing {
+  width: 60%;
+}
+
+.ware_canshu {
+  display: flex;
+  flex-direction: row;
+  color: #98989f;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.detailImg {
+  width: 100%;
+}
+
+/* 页脚 */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  background-color: #e6e6fa;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  height: 60rpx;
+}
+
+.button {
+  width: 25%;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 8rpx;
+  border-radius: 10rpx;
+}
+
+.footer text {
+  display: inline-block;
+  width: 25%;
+  border: 1px solid #ccc;
+  padding: 15rpx;
+  background-color: #696969;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+}
+
+#jionShop {
+  background-color: #d4237a;
+  margin-left: 70rpx;
+}
+
+/* //商品部分 */
+
+.wareArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:0 20rpx;
+}
+
+.wareArea>view {
+  width: 30%;
+  margin-top: 5rpx;
+}
+
+.margin {
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+}
+
+.wareArea>view>image {
+  width: 100%;
+  height: 200rpx;
+}
+
+.price {
+  color: #e80080;
+  font-size: 35rpx;
+  padding: 0 10rpx 0 20rpx;
+}
+
+/* 原价 */
+
+.yuan_price {
+  color: #888;
+  font-size: 30rpx;
+  padding: 20rpx;
+  text-decoration: line-through;
+}
+
+.describe {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 25rpx;
+  padding: 10rpx;
+  height: 60rpx;
+}
+

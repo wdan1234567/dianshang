@@ -1,0 +1,55 @@
+/* 用户头像 */
+
+page {
+  background-color: #dcdcdc;
+}
+
+#headIMG {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  margin-right: 25rpx;
+}
+
+.userMSG {
+  padding: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #98989f;
+}
+
+/* 用户收藏 */
+
+.collect,.waiting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+  background-color: #fff;
+}
+
+.collect>view image ,.waiting>view image{
+  width: 50rpx;
+}
+
+.collect>view,.waiting>view {
+  width: 30%;
+  text-align: center;
+  font-size: 25rpx;
+  color: #98989f;
+}
+.waiting{
+  margin-top: 20rpx;
+}
+.shouhuo{
+  margin-top: 0 !important;
+  justify-content: flex-start !important;
+}
+.shouhuo>view{
+  width: 25%;
+}

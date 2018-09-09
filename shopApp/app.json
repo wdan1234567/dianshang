@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/my/my",
+    "pages/login/login",
+    "pages/search/search",
+    "pages/classify2/classify2",
+    "pages/wareMsg/wareMsg",
+    "pages/shopcart/shopcart",
+    "pages/pay/pay"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "唯品会",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#d4237a",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/footerImg/1.png",
+        "selectedIconPath": "pages/footerImg/11.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "pages/footerImg/2.png",
+        "selectedIconPath": "pages/footerImg/22.png"
+      },
+      {
+        "pagePath": "pages/shopcart/shopcart",
+        "text": "购物车",
+        "iconPath": "pages/footerImg/3.png",
+        "selectedIconPath": "pages/footerImg/33.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/footerImg/4.png",
+        "selectedIconPath": "pages/footerImg/44.png"
+      }
+    ]
+  }
+}

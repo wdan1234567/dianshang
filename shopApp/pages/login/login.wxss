@@ -1,0 +1,54 @@
+form {
+  height: 240px;
+  line-height: 40px;
+}
+
+.container {
+  padding: 20rpx;
+}
+
+input {
+  border: 1px solid #ccc;
+  width: 310px;
+  height: 40px;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.section {
+  margin-top: 20rpx;
+}
+
+.section input {
+  padding: 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header text {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+}
+
+form text {
+  font-size: 20px;
+  color: #666;
+}
+
+.fpwd {
+  margin-top: 200px;
+}
+
+.fpwd text {
+  color: #ccc;
+  font-size: 18px;
+}
+button{
+  background-color: #f10180;
+    border: 1px solid #f10180;
+}

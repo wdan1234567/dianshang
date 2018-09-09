@@ -1,0 +1,103 @@
+<scroll-view scroll-into-view="{{toView}}" class='scroll-view' scroll-with-animation="true" scroll-y="true">
+<view>
+  <view class='head_nav' >
+    <block wx:for='{{head}}' wx:key='{{index}}'>
+      <text bindtap='checkItem' class="{{item == shopitem?'checked':''}}" data-classify="{{item}}">{{item}}</text>
+    </block>
+  </view>
+<view id='shangping'>
+1
+
+  <!--顶部轮播图  -->
+  <swiper class='banner' indicator-dots='true' indicator-color='white' indicator-active-color='#d4237a' autoplay='true' interval='5000' duration='500' style="height:600rpx;"  >
+    <block wx:for="{{wareMsg.images}}" wx:key='{{index}}'>
+      <swiper-item class="item_image">
+        <image src='{{ip}}{{item}}' class='swiper_imag' mode="widthFix" style="height:600rpx;"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+    
+</view>
+</view>
+<view>
+  <text class='price'  >￥{{wareMsg.activity_price}}</text>
+  <text class='yuan_price'>￥{{wareMsg.price}}</text>
+  <image src='../footerImg/collect1.png' class='collect' bindtap='collect_function' wx:if='{{collect_status}}'></image>
+  <image src='../footerImg/collect11.png' class='collect' bindtap='collect2_function' wx:else></image>
+  <view class='describe'>{{wareMsg.describe}}</view>
+</view>
+<view class='inf'>
+  <view class='first'>
+    <text class='border'>免邮</text>
+    <text class='text'>新人专属7天免邮特权</text>
+  </view>
+  <view>
+    <text class='border'>唯品币</text>
+    <text class='text'>最多可获{{huobi}}个唯品币</text>
+  </view>
+</view>
+<!-- 配送地址 -->
+
+<view class='peisong'>配送至：成都</view>
+<view class='peisong centent_youhui'>
+  <view>
+    <image src='../footerImg/gou.png' class='img1'></image>
+    <text>唯品会发货</text>
+  </view>
+  <view>
+    <image src='../footerImg/gou.png' class='img1'></image>
+    <text>7天包退</text>
+  </view>
+  <view>
+    <image src='../footerImg/gou.png' class='img1'></image>
+    <text>退货返运费</text>
+  </view>
+</view>
+<!-- 收藏 -->
+<view class='collect_area' >
+  <view>
+    <image src='{{ip+wareMsg.images[0]}}' class='collect_img'></image>
+    <text class='pinpai_text'>店铺名称：{{wareMsg.store_name}}</text>
+  </view>
+  <text class='border2'>收藏商品</text>
+</view>
+<view class='enter_shop'>
+  进入店铺
+</view>
+<view class='tuijian'  id='tuijian'>
+  相似推荐
+</view>
+<!-- 推荐图片 -->
+<view class='wareArea' bindtap='maodian' >
+  <view wx:for='{{tuijian}}' class='{{index%2!=0?"margin":""}}' wx:key='index'>
+    <image src='{{ip+item.images[0]}}' class='img' bindtap='tuijianFun' data-item='{{item}}' ></image>
+    <text class='price'>￥{{item.activity_price}}</text>
+    <text class='yuan_price'>￥{{item.price}}</text>
+    <view class='describe'>{{item.describe}}</view>
+  </view>
+</view>
+<!-- 商品信息 -->
+<view class='waremsg' >
+  <view   id='msg' class='waremsgTitle'>商品详情</view>
+  <block wx:for='{{wareMsg.parameter}}' wx:key='index'>
+    <view class='ware_canshu'>
+      <view class='title'>{{item[0]}}</view>
+      <view class='xiangqing'>{{item[1]}}</view>
+    </view>
+  </block>
+</view>
+<!-- 商品图片 -->
+<view class='wareImg' style='margin-bottom:80rpx'>
+  <view class='waremsgTitle'>商品图片</view>
+  <block wx:for='{{wareMsg.detail}}' wx:key='{{index}}'>
+    <image src='{{ip+item}}' class='detailImg' mode="widthFix"></image>
+  </block>
+</view>
+<view class='footer'>
+  <view class='button' bindtap='jumpShopCar'>
+    <van-tabbar-item icon="shopping-cart" info="{{numAll}}"></van-tabbar-item>
+  </view>
+  <text id='jionShop' bindtap='jionShopCar'>加入购物车</text>
+  <text  id='buy'  bindtap='jumpShopCar'>立即购买</text>
+</view>
+</scroll-view>

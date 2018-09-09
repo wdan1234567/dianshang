@@ -1,0 +1,58 @@
+/* //二级标题选中的颜色 */
+
+.scroll-view_H {
+  width: 100%;
+  white-space: nowrap;
+  padding: 15rpx 15rpx 0;
+  
+}
+.tab text {
+  margin-right: 65rpx;
+  padding-bottom: 15rpx;
+  display: inline-block;
+}
+.tab{
+  display: flex;
+  flex-direction: row;
+  /* position: static; */
+}
+.checked {
+  color: #d4237a;
+  border-bottom: 5rpx #d4237a solid;
+}
+
+.banner {
+  width: 100%;
+  margin-top: 10rpx;
+}
+
+.banner image {
+  width: 100%;
+}
+
+/* 宫格样式 */
+
+.classify {
+  display: flex;
+  justify-content: space-between;
+}
+
+.classify image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.dong {
+  width: 100%;
+  height: 200rpx;
+}
+.center{
+  display: block;
+}
+
+#aa123{
+  position: static;
+  height: 100rpx;
+  width: 100%;
+  top:0;
+}

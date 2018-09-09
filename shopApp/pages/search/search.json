@@ -1,0 +1,14 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "搜索商品",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "van-search": "../../dist/search/index",
+      "van-cell": "../../dist/cell/index",
+      "van-cell-group": "../../dist/cell-group/index"
+  }
+
+     
+    
+}
